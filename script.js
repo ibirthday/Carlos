@@ -3,7 +3,7 @@ const countdownElement = document.getElementById('countdown');
 
 function updateCountdown() {
     const currentDate = new Date();
-    const selectedDate = new Date("2024-04-02.");
+    const selectedDate = new Date("2025-04-02.");
     const timeDifference = selectedDate - currentDate;
 
     if (timeDifference <= 0) {
