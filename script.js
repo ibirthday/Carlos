@@ -52,3 +52,9 @@ function updateCountdown() {
     }
 }
 
+var audio = new Audio('song.mp3');
+var botonReproducir = document.getElementById('reproducir');
+
+botonReproducir.addEventListener('click', function() {
+    audio.play();
+});
