@@ -30,3 +30,12 @@
     position: absolute;
     top: 0;
 }
+
+#reproducir{
+    background-color: pink;
+    width: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+}
