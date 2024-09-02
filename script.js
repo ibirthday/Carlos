@@ -3,14 +3,14 @@ const countdownElement = document.getElementById('countdown');
 
 function updateCountdown() {
     const current_date = new Date();
-    const selected_date = new Date(`${current_date.getFullYear()}-09-02.`)
+    const selected_date = new Date(`${current_date.getFullYear()}-04-02`)
     
     if (selected_date - current_date <= 0) {
         selected_date.setFullYear(current_date.getFullYear() + 1)
     }
     const time_difference = selected_date - current_date;
 
-    if (`${current_date.getDay()}-${current_date.getMonth()}-${current_date.getFullYear()}` === `${selected_date.getDay()}-${selected_date.getMonth()}-${current_date.getFullYear()}`) {
+    if (`${current_date.getDay()}-${current_date.getMonth()}}` === `${selected_date.getDay()}-${selected_date.getMonth()}`) {
         countdownElement.textContent = '¡Feliz Cumpleaños Carlos!';
     } else {
         const days = Math.floor(time_difference / (1000 * 60 * 60 * 24));
