@@ -8,7 +8,7 @@ function updateCountdown() {
     if (selected_date - current_date <= 0) {
         selected_date.setFullYear(current_date.getFullYear() + 1)
     }
-    const timeDifference = selectedDate - currentDate;
+    const timeDifference = selected_date - current_date;
 
     if (`${current_date.getDay()}-${current_date.getMonth()}-${current_date.getFullYear()}` === `${selected_date.getDay()}-${selected_date.getMonth()}-${selected_date.getFullYear()}`) {
         countdownElement.textContent = '¡Feliz Cumpleaños Carlos!';
