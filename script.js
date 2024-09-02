@@ -2,7 +2,7 @@ const countdownInterval = setInterval(updateCountdown, 1000);
 const countdownElement = document.getElementById('countdown');
 
 function updateCountdown() {
-    const currentDate = new Date();
+    const current_date = new Date();
     const selected_date = new Date(`${current_date.getFullYear()}-04-02.`)
     
     if (selected_date - current_date <= 0) {
