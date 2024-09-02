@@ -8,15 +8,15 @@ function updateCountdown() {
     if (selected_date - current_date <= 0) {
         selected_date.setFullYear(current_date.getFullYear() + 1)
     }
-    const timeDifference = selected_date - current_date;
+    const time_difference = selected_date - current_date;
 
-    if (`${current_date.getDay()}-${current_date.getMonth()}-${current_date.getFullYear()}` === `${selected_date.getDay()}-${selected_date.getMonth()}-${selected_date.getFullYear()}`) {
+    if (`${current_date.getDay()}-${current_date.getMonth()}-${current_date.getFullYear()}` === `${selected_date.getDay()}-${selected_date.getMonth()}-${current_date.getFullYear()}`) {
         countdownElement.textContent = '¡Feliz Cumpleaños Carlos!';
     } else {
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        const days = Math.floor(time_difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((time_difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((time_difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((time_difference % (1000 * 60)) / 1000);
 
         if (days == 1 && hours == 1 && minutes == 1 && seconds == 1) {
             countdownElement.textContent = `${days} día, ${hours} hora, ${minutes} minuto, ${seconds} segundo`;
