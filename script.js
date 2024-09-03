@@ -23,38 +23,38 @@ function updateCountdown() {
         const minutes = Math.floor((time_difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((time_difference % (1000 * 60)) / 1000);
 
-        if (days == 1 && hours == 1 && minutes == 1 && seconds == 1) {
-            countdownElement.textContent = `${days} día, ${hours} hora, ${minutes} minuto, ${seconds} segundo`;
+       if (days == 1 && hours == 1 && minutes == 1 && seconds == 1) {
+            countdownElement.textContent = `${days.toString()} día, ${hours.toString()} hora, ${minutes.toString()} minuto, ${seconds.toString()} segundo`;
         } else if (hours == 1 && minutes == 1 && seconds == 1) {
-            countdownElement.textContent = `${days} días, ${hours} hora, ${minutes} minuto, ${seconds} segundo`;
+            countdownElement.textContent = `${days.toString()} días, ${hours.toString()} hora, ${minutes.toString()} minuto, ${seconds.toString()} segundo`;
         } else if (days == 1 && hours == 1 && minutes == 1) {
-            countdownElement.textContent = `${days} día, ${hours} hora, ${minutes} minuto, ${seconds} segundos`;
+            countdownElement.textContent = `${days.toString()} día, ${hours.toString()} hora, ${minutes.toString()} minuto, ${seconds.toString()} segundos`;
         } else if (days == 1 && hours == 1 && seconds == 1) {
-            countdownElement.textContent = `${days} día, ${hours} hora, ${minutes} minutos, ${seconds} segundo`;
+            countdownElement.textContent = `${days.toString()} día, ${hours.toString()} hora, ${minutes.toString()} minutos, ${seconds.toString()} segundo`;
         } else if (days == 1 && minutes == 1 && seconds == 1) {
-            countdownElement.textContent = `${days} día, ${hours} horas, ${minutes} minuto, ${seconds} segundo`;
+            countdownElement.textContent = `${days.toString()} día, ${hours.toString()} horas, ${minutes.toString()} minuto, ${seconds.toString()} segundo`;
         } else if (days == 1 && hours == 1) {
-            countdownElement.textContent = `${days} día, ${hours} hora, ${minutes} minutos, ${seconds} segundos`;
+            countdownElement.textContent = `${days.toString()} día, ${hours.toString()} hora, ${minutes.toString()} minutos, ${seconds.toString()} segundos`;
         } else if (days == 1 && minutes == 1) {
-            countdownElement.textContent = `${days} día, ${hours} horas, ${minutes} minuto, ${seconds} segundos`;
+            countdownElement.textContent = `${days.toString()} día, ${hours.toString()} horas, ${minutes.toString()} minuto, ${seconds.toString()} segundos`;
         } else if (days == 1 && seconds == 1) {
-            countdownElement.textContent = `${days} día, ${hours} horas, ${minutes} minutos, ${seconds} segundo`;
+            countdownElement.textContent = `${days.toString()} día, ${hours.toString()} horas, ${minutes.toString()} minutos, ${seconds.toString()} segundo`;
         } else if (hours == 1 && minutes == 1) {
-            countdownElement.textContent = `${days} días, ${hours} hora, ${minutes} minuto, ${seconds} segundos`;
+            countdownElement.textContent = `${days.toString()} días, ${hours.toString()} hora, ${minutes.toString()} minuto, ${seconds.toString()} segundos`;
         } else if (hours == 1 && seconds == 1) {
-            countdownElement.textContent = `${days} días, ${hours} hora, ${minutes} minutos, ${seconds} segundo`;
+            countdownElement.textContent = `${days.toString()} días, ${hours.toString()} hora, ${minutes.toString()} minutos, ${seconds.toString()} segundo`;
         } else if (minutes == 1 && seconds == 1) {
-            countdownElement.textContent = `${days} días, ${hours} horas, ${minutes} minuto, ${seconds} segundo`;
+            countdownElement.textContent = `${days.toString()} días, ${hours.toString()} horas, ${minutes.toString()} minuto, ${seconds.toString()} segundo`;
         } else if (seconds == 1) {
-            countdownElement.textContent = `${days} días, ${hours} horas, ${minutes} minutos, ${seconds} segundo`;
+            countdownElement.textContent = `${days.toString()} días, ${hours.toString()} horas, ${minutes.toString()} minutos, ${seconds.toString()} segundo`;
         } else if (minutes == 1) {
-            countdownElement.textContent = `${days} días, ${hours} horas, ${minutes} minuto, ${seconds} segundos`;
+            countdownElement.textContent = `${days.toString()} días, ${hours.toString()} horas, ${minutes.toString()} minuto, ${seconds.toString()} segundos`;
         } else if (hours == 1) {
-            countdownElement.textContent = `${days} días, ${hours} hora, ${minutes} minutos, ${seconds} segundos`;
+            countdownElement.textContent = `${days.toString()} días, ${hours.toString()} hora, ${minutes.toString()} minutos, ${seconds.toString()} segundos`;
         } else if (days == 1) {
-            countdownElement.textContent = `${days} día, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
+            countdownElement.textContent = `${days.toString()} día, ${hours.toString()} horas, ${minutes.toString()} minutos, ${seconds.toString()} segundos`;
         } else{
-            countdownElement.textContent = `${days} días, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
+            countdownElement.textContent = `${days.toString()} días, ${hours.toString()} horas, ${minutes.toString()} minutos, ${seconds.toString()} segundos`;
         }
 
     }
